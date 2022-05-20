@@ -19,7 +19,7 @@
     },
     {
       "tag": "goodbye",
-      "patterns": ["Bye", "See you later", "Goodbye","quit"],
+      "patterns": ["Bye", "See you later", "Goodbye"],
       "responses": [
         "See you later, thanks for visiting",
         "Have a nice day",
@@ -28,8 +28,48 @@
     },
     {
       "tag": "thanks",
-      "patterns": ["Thanks", "Thank you", "That's helpful", "Thank's a lot!"],
-      "responses": ["Happy to help!", "Any time!", "My pleasure"]
+      "patterns": [
+        "Thanks",
+        "Thanks for the help",
+        "Thank you",
+        "That's helpful",
+        "Thank's a lot!"
+      ],
+      "responses": [
+        "Happy to help!",
+        "You're most welcome!",
+        "Any time!",
+        "My pleasure"
+      ]
+    },
+    {
+      "tag": "help",
+      "patterns": [
+        "Could you help me?",
+        "give me a hand please",
+        "Can you help?",
+        "What can you do for me?",
+        "I need a support",
+        "I need a help",
+        "support me please"
+      ],
+      "responses": [
+        "Tell me how can assist you",
+        "Tell me your problem to assist you",
+        "Yes Sure, How can I support you"
+      ]
+    },
+    {
+      "tag": "complaint",
+      "patterns": [
+        "have a complaint",
+        "I want to raise a complaint",
+        "there is a complaint about a service"
+      ],
+      "responses": [
+        "Please provide us your complaint in order to assist you",
+        "Please mention your complaint, we will reach you and sorry for any inconvenience caused"
+      ]
     },
     {
       "tag": "items",
@@ -43,8 +83,6 @@
     {
       "tag": "payments",
       "patterns": [
-        "How can I pay?",
-        "What paymeny methods do you accept?",
         "Do you take credit cards?",
         "Do you accept Mastercard?",
         "Can I pay with Paypal?",
@@ -74,6 +112,20 @@
       "responses": [
         "Why did the hipster burn his mouth? He drank the coffee before it was cool.",
         "What did the buffalo say when his son left for college? Bison."
+      ]
+    },
+    {
+      "tag": "location",
+      "patterns": [
+        "What is the shop location?",
+        "Where is the shop?",
+        "Where is the coffee shop?",
+        "How to get there?"
+      ],
+      "responses": [
+        "The shop is located at the corner of the street",
+        "The shop is located at Main Street",
+        "The address is 123 Main Street, Anytown, USA"
       ]
     }
   ]
