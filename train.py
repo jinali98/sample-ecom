@@ -114,7 +114,7 @@ for epoch in range (num_epochs):
 #after training, print final loss
 print(f'final loss, loss={loss.item():.4f}')
 
-#save trained data
+#save trained data to a dictionary
 data={
     "model_state":model.state_dict(),
     "input_size":input_size,
@@ -124,6 +124,7 @@ data={
     "tags":tags
 }
 
+#Create a pytorch file (.pth) and save for use in chat
 FILE = "data.pth"
 torch.save(data,FILE)
 
