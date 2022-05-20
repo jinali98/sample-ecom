@@ -19,7 +19,7 @@
     },
     {
       "tag": "goodbye",
-      "patterns": ["Bye", "See you later", "Goodbye"],
+      "patterns": ["Bye", "See you later", "Goodbye","quit"],
       "responses": [
         "See you later, thanks for visiting",
         "Have a nice day",
@@ -43,6 +43,8 @@
     {
       "tag": "payments",
       "patterns": [
+        "How can I pay?",
+        "What paymeny methods do you accept?",
         "Do you take credit cards?",
         "Do you accept Mastercard?",
         "Can I pay with Paypal?",
