@@ -34,9 +34,7 @@ bot_name = "Jinali:)"
 print(f"Hi I'm {bot_name}. Lets chat lol\nEnter 'quit' to leave")
 while True:
     sentence = input(">>>")
-    if sentence == "quit":
-        #Break out of loop on quit
-        break
+   
 
 
     sentence = tokenize(sentence)
@@ -59,7 +57,10 @@ while True:
         for intent in intents["intents"]:
             if tag == intent["tag"]:
             #Output a random choice with same tag
-                print(f"[{bot_name}] : {random.choice(intent['responses'])}")
+                print(f"[{bot_name}] : {random.choice(intent['responses'])}")  
 #If sentence pattern is unrecognized, say not understood
     else:
         print(f"[{bot_name}] : I dont understand")
+    if tag == "goodbye":
+        #Break out of loop if tag is goodbye
+        break
