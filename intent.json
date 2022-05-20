@@ -43,6 +43,8 @@
     {
       "tag": "payments",
       "patterns": [
+        "How can I pay?",
+        "What paymeny methods do you accept?",
         "Do you take credit cards?",
         "Do you accept Mastercard?",
         "Can I pay with Paypal?",

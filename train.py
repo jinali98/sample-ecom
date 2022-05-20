@@ -1,7 +1,7 @@
 from cgitb import text
 from ftplib import all_errors
 import json
-from nltk_utils import tokenized, stem, bag_of_words
+from nltk_utils import tokenize, stem, bag_of_words
 import numpy as np
 import torch
 import torch.nn as nn
@@ -25,7 +25,7 @@ for intent in intents['intents']:
     tags.append(tag)
     for pattern in intent['patterns']:
         # tokenize the pattern and this gives an array of words
-        words = tokenized(pattern)
+        words = tokenize(pattern)
         # as words is an array we extend it and  add the words to the all_words list 
         all_words.extend(words)
         # we add the tag and the corresponding words to the xy  as a tuple
@@ -113,3 +113,18 @@ for epoch in range (num_epochs):
         print(f'epoch {epoch+1}/{num_epochs}, loss={loss.item():.4f}')
 #after training, print final loss
 print(f'final loss, loss={loss.item():.4f}')
+
+#save trained data
+data={
+    "model_state":model.state_dict(),
+    "input_size":input_size,
+    "output_size":output_size,
+    "hidden_size":hidden_size,
+    "all_words":all_words,
+    "tags":tags
+}
+
+FILE = "data.pth"
+torch.save(data,FILE)
+
+print(f"Training complete. File saved to {FILE}")
