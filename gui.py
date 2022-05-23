@@ -3,14 +3,16 @@ from tkinter import *
 from chat import get_response, bot_name
 
 MAIN_COLOR ="#9D5353"
+
 DIVIDER_COLOR = "#DACC96"
 SECOND_MAIN_COLOR="#EFEAD8"
 SECONDARY_COLOR="#DACC96"
+
 TEXT_COLOR="#632626"
+
 HEADER_BG="#DACC96"
 HEADER_TEXT_COLOR="#5F7161"
 BUTTON_COLOR="#DACC96"
-
 
 FONT_MAIN = 'Arial 12'
 FONT_BOLD = 'Arial 14 bold'
@@ -32,10 +34,6 @@ class ChatBot:
         # creating the header lable
         header_label = Label(self.window, text='Covid-19 Support', font=FONT_BOLD, pady=13, bg=BUTTON_COLOR, fg=TEXT_COLOR)
         header_label.place(relwidth=1)
-
-        # creating a divider
-        divider = Label(self.window, width=460, bg=DIVIDER_COLOR)
-        divider.place(relwidth=1, rely=0.07, relheight=0.012)
 
         # creating a text widget
         self.text_widget = Text(self.window, width=20, height=2, bg=SECOND_MAIN_COLOR, fg=TEXT_COLOR, font=FONT_MAIN, padx=5, pady=5)
@@ -61,7 +59,15 @@ class ChatBot:
         send_button = Button(bottom_label, text="Send", bg=BUTTON_COLOR, fg=TEXT_COLOR, font=FONT_BOLD, width=15, command=lambda: self._on_enter(None))
         send_button.place(relwidth=0.22, relheight=0.06, relx=0.77, rely=0.008)
 
-
+# adding introduction chatbot msg
+        chatbotIntro = f"{bot_name}: Hello, Thankyou for connecting with Covid-19 support\n\n"
+        self.text_widget.configure(state=NORMAL)
+        self.text_widget.insert(END, chatbotIntro)
+        self.text_widget.configure(state=DISABLED)
+        chatbotIntroHow = f"{bot_name}:To ask a question, please type your question and press enter or \nsend button.\n\n"
+        self.text_widget.configure(state=NORMAL)
+        self.text_widget.insert(END, chatbotIntroHow)
+        self.text_widget.configure(state=DISABLED)
 
     def _on_enter(self, event):
         msg = self.msg_entry.get()
