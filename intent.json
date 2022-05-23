@@ -12,24 +12,6 @@
       ],
       "responses": [
         "Hey :-)",
-        "Hello, thanks for visiting",
-        "Hi there, what can I do for you?",
-        "Hi there, how can I help?"
-      ]
-    },
-    {
-      "tag": "greeting",
-      "patterns": [
-        "Hi",
-        "Hey",
-        "How are you",
-        "Is anyone there?",
-        "Hello",
-        "Good day"
-      ],
-      "responses": [
-        "Hey :-)",
-        "Hello, thanks for visiting",
         "Hi there, what can I do for you?",
         "Hi there, how can I help?"
       ]
@@ -37,11 +19,7 @@
     {
       "tag": "goodbye",
       "patterns": ["Bye", "See you later", "Goodbye"],
-      "responses": [
-        "See you later, thanks for visiting",
-        "Have a nice day",
-        "Bye! Come back again soon."
-      ]
+      "responses": ["See you later, Stay safe", "Have a nice day"]
     },
     {
       "tag": "thanks",
@@ -76,73 +54,176 @@
         "Yes Sure, How can I support you"
       ]
     },
+
     {
-      "tag": "complaint",
+      "tag": "difference",
       "patterns": [
-        "have a complaint",
-        "I want to raise a complaint",
-        "there is a complaint about a service"
+        "Are corona virus and covid-19 different?",
+        "Are coronavirus and covid 19 the same?"
       ],
       "responses": [
-        "Please provide us your complaint in order to assist you",
-        "Please mention your complaint, we will reach you and sorry for any inconvenience caused"
+        "COVID-19 is a disease caused by the virus type coronavirus."
       ]
     },
     {
-      "tag": "items",
+      "tag": "season",
       "patterns": [
-        "Which items do you have?",
-        "What kinds of items are there?",
-        "What do you sell?"
-      ],
-      "responses": ["We sell coffee and tea", "We have coffee and tea"]
-    },
-    {
-      "tag": "payments",
-      "patterns": [
-        "Do you take credit cards?",
-        "Do you accept Mastercard?",
-        "Can I pay with Paypal?",
-        "Are you cash only?"
+        "Is coronavirus common?",
+        "Is coronavirus seasonal?",
+        "Is there a season for covid 19?",
+        "Which season"
       ],
       "responses": [
-        "We accept VISA, Mastercard and Paypal",
-        "We accept most major credit cards, and Paypal"
+        "Coronavirus disease (COVID-19) appears to be temperature-sensitive and, therefore, seasonal."
+      ]
+    },
+
+    {
+      "tag": "general",
+      "patterns": [
+        "Can I have information about coronavirus?",
+        "Can you give me details about coronavirus?",
+        "Can you tell me about COVID-19?",
+        "Can you tell me what coronavirus is?",
+        "Tell me what covid-19 is"
+      ],
+      "responses": [
+        "COVID-19 is the disease caused by SARS-CoV-2, \nthe coronavirus that emerged in December 2019."
       ]
     },
     {
-      "tag": "delivery",
+      "tag": "start",
       "patterns": [
-        "How long does delivery take?",
-        "How long does shipping take?",
-        "When do I get my delivery?"
-      ],
-      "responses": ["Delivery takes 2-4 days", "Shipping takes 2-4 days"]
-    },
-    {
-      "tag": "funny",
-      "patterns": [
-        "Tell me a joke!",
-        "Tell me something funny!",
-        "Do you know a joke?"
+        "Can you explain how covid 19 started?",
+        "Can you explain how the virus started?",
+        "Can you explain how the virus came into existance?",
+        "Tell me how coronavirus emerged?",
+        "How the virus started and when?",
+        "Where did coronavirus start?",
+        "Tell me about origin of covid?",
+        "Coronavirus in Wuhan"
       ],
       "responses": [
-        "Why did the hipster burn his mouth? He drank the coffee before it was cool.",
-        "What did the buffalo say when his son left for college? Bison."
+        "The virus first appeared on a small scale in November 2019 with the first \nlarge cluster appearing in Wuhan, China in December 2019"
       ]
     },
     {
-      "tag": "location",
+      "tag": "covid-animals",
       "patterns": [
-        "What is the shop location?",
-        "Where is the shop?",
-        "Where is the coffee shop?",
-        "How to get there?"
+        "Did coronavirus come from a bat?",
+        "Did coronavirus come from a lab?",
+        "Did coronavirus come from an animal?",
+        "Did coronavirus come from bat soup?",
+        "Do animals have covid",
+        "Do bats have covid?"
       ],
       "responses": [
-        "The shop is located at the corner of the street",
-        "The shop is located at Main Street",
-        "The address is 123 Main Street, Anytown, USA"
+        "No, the virus that causes COVID-19 hasn-t been isolated \nfrom any of the UK-s 17 resident breeding bat species. \nThere are no known zoonotic (harmful to humans) coronaviruses found in UK bats. \nIn fact the COVID-19 virus hasn-t been isolated from any \nof the world-s 1400+ species of bat."
+      ]
+    },
+    {
+      "tag": "symptoms",
+      "patterns": [
+        "Am I infected?",
+        "Are coronavirus symptoms gradual?",
+        "Are coronavirus symptoms similar to that of flu?",
+        "Are the only symptoms simillar to that of flu?",
+        "Are the symptoms same for every patient?",
+        "What are the symptoms of covid 19?"
+      ],
+      "responses": [
+        "People with COVID-19 have had a wide range of symptoms reported – \nranging from mild symptoms to severe illness. \nSymptoms may appear 2-14 days after exposure to the virus. \nAnyone can have mild to severe symptoms.People with these symptoms can have COVID-19:\nFever or chills\nCough\nShortness of breath or difficulty breathing\nFatigue\nHeadache"
+      ]
+    },
+    {
+      "tag": "covid-hotline",
+      "patterns": [
+        "Are there any emergency numbers for coronavirus in my area?",
+        "Are there any means of contact for COVID 19 patients to reach the authorities?",
+        "Can I call my regular physician for coronavirus symptoms?",
+        "Coronavirus rapid response",
+        "Coronavirus ambulance",
+        "Covid emergency number",
+        "Covid contact"
+      ],
+      "responses": [
+        "In order to assist those with suspected Covid-19 the Ministry of Health has established an emergency hotline 1390 for the public to obtain free medical advice on symptoms of COVID-19."
+      ]
+    },
+    {
+      "tag": "mask",
+      "patterns": [
+        "Are masks effective against covid?",
+        "Are masks important during the Covid19 virus outbreak?",
+        "Are masks the only option for preventing Covid19?",
+        "Can wearing a mask help prevent the spread of the corona virus?",
+        "Conavirus reusable home made masks"
+      ],
+      "responses": [
+        "Face masks combined with other preventive measures, such as \ngetting vaccinated, frequent hand-washing and physical distancing, \ncan help slow the spread of the virus that causes COVID-19"
+      ]
+    },
+    {
+      "tag": "precautions",
+      "patterns": [
+        "How can i avoid getting infected?",
+        "How can I be precautionary about corona",
+        "How can I fight coronavirus?",
+        "How can I keep myself safe",
+        "How can I prevent corona virus",
+        "How can I prevent from catching the virus?",
+        "How can I protect myself?",
+        "How can I protect myself against COVID-19?",
+        "How can I stay safe during corona virus emergency"
+      ],
+      "responses": [
+        "You can lower your chances of getting or spreading the virus by \ntaking these steps: \nWash your hands well and often. \nUse hand sanitizer when you are not near soap and water. \nTry not to touch your face. \nWear a face mask when you go out. \nFollow your community guidelines for staying home. \nWhen you do go out in public leave at least 6 feet of space between you \nand others. \nDo not leave your house if you do not feel well. \nCover your mouth with your elbow when you cough or sneeze, or use a tissue."
+      ]
+    },
+    {
+      "tag": "medication",
+      "patterns": [
+        "Coronavirus medicine.",
+        "Coronavirus medicines.",
+        "Coronavirus treatment.",
+        "Covid-19 treatment",
+        "do coronavirus have cure",
+        "Do we have treatment for the virus?",
+        "How is the virus treated?"
+      ],
+      "responses": [
+        "At the moment, there is no cure for infection with the coronavirus \nbehind the COVID-19 pandemic. \nHowever, different types of drugs are being tested in human patients for \ntheir ability to fight off infection or to reduce the severity of disease. \nExamples include an antiviral known as remdesivir, a drug used \nfor pancreatic inflammation called camostat mesilate, \nand the therapeutic antibody regeneron. Also, a number \nof vaccines were being developed and investigated for their \nability to prevent COVID-19"
+      ]
+    },
+    {
+      "tag": "myths",
+      "patterns": [
+        "Is COVID-19 Chinese?",
+        "Is Covid-19 a Chinese virus?",
+        "Is covid-19 a biomedical weapon?",
+        "is coronavirus real",
+        "is coronavirus a hoax",
+        "is corona virus a bio weapon",
+        "Is China using covid-19 to take over the world?"
+      ],
+      "responses": [
+        "Please refer the below link to learn more about covid-19 related myths \n https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8300139/ "
+      ]
+    },
+    {
+      "tag": "spreading",
+      "patterns": [
+        "Could you tell me how COVID-19 is spreading?",
+        "Covid19 and its transmission.",
+        "Covid19 human to human transmission.",
+        "Can the virus be spread through handshakes",
+        "Can one person infect a whole group of people with COVID-19?",
+        "Does the corona spread by touch?",
+        "How can covid-19 be spread",
+        "How are people getting infected?"
+      ],
+      "responses": [
+        "COVID-19 transmits when people breathe in air contaminated by \n droplets and small airborne particles containing the virus. \n The risk of breathing these in is highest when people are in close proximity, \n but they can be inhaled over longer distances, particularly indoors. \nTransmission can also occur if splashed or sprayed with \n contaminated fluids in the eyes, nose or mouth, and, rarely, \nvia contaminated surfaces"
       ]
     }
   ]

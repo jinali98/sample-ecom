@@ -30,7 +30,7 @@ model.eval()
 
 # Implmeting chat for testing
 
-bot_name = "Dilmah"
+bot_name = "Support"
 
 def get_response(msg):        
         sentence = tokenize(msg)

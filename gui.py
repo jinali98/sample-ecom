@@ -10,12 +10,7 @@ TEXT_COLOR="#632626"
 HEADER_BG="#DACC96"
 HEADER_TEXT_COLOR="#5F7161"
 BUTTON_COLOR="#DACC96"
-# MAIN_COLOR ="#ABB2B9"
-# SECOND_MAIN_COLOR="#17202A"
-# SECONDARY_COLOR="#2C3E50"
-# TEXT_COLOR="#EAECEE"
-# HEADER_BG="#2C3E50"
-# HEADER_TEXT_COLOR="#EAECEE"
+
 
 FONT_MAIN = 'Arial 12'
 FONT_BOLD = 'Arial 14 bold'
@@ -30,12 +25,12 @@ class ChatBot:
         self.window.mainloop()
 
     def _setup_main_window(self):
-        self.window.title("Dilmah Tea Lounge - ChatBot")
+        self.window.title("COVID-19 SUPPORT - ChatBot")
         self.window.resizable(width=False, height=False)
-        self.window.configure(width=470, height=550, bg=SECOND_MAIN_COLOR)
+        self.window.configure(width=550, height=600, bg=SECOND_MAIN_COLOR)
 
         # creating the header lable
-        header_label = Label(self.window, text='Dilmah Tea Lounge', font=FONT_BOLD, pady=13, bg=BUTTON_COLOR, fg=TEXT_COLOR)
+        header_label = Label(self.window, text='Covid-19 Support', font=FONT_BOLD, pady=13, bg=BUTTON_COLOR, fg=TEXT_COLOR)
         header_label.place(relwidth=1)
 
         # creating a divider
@@ -70,7 +65,7 @@ class ChatBot:
 
     def _on_enter(self, event):
         msg = self.msg_entry.get()
-        self._insert_msg(msg, "you")
+        self._insert_msg(msg, "Me")
 
     def _insert_msg(self, msg, sender):
         if not msg:
